@@ -1,0 +1,63 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environments and dependencies
+env/
+.venv/
+venv/
+ENV/
+venv.bak/
+
+# Ignore package distribution directories
+.Python
+build/
+dist/
+.eggs/
+*.egg-info/
+wheels/
+
+# Ignore logs and temporary files
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore unit test, coverage, and tox environments
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+.hypothesis/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore macOS and Linux system files
+.DS_Store
+.AppleDouble
+.LSOverride
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Ignore editor and IDE configuration files
+.vscode/
+.history/
+.spyderproject/
+.spyproject/
+.ropeproject/
+
+# Ignore MyPy, Pyre, and PyType caches
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Ignore Cython debug symbols
+cython_debug/
+
+# Ignore Docker-related environment files
+.env
+.dockerignore

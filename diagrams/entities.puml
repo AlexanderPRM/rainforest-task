@@ -1,0 +1,41 @@
+@startuml entities
+
+title E-Commerce Entities
+
+
+entity "Product" {
+    * id : uuid
+    --
+    * name: varchar(24)
+    description: text
+    * price: numeric
+    * cost: numeric
+    * stock: int
+    created_at: timestamp
+    updated_at: timestamp
+}
+
+entity "Order" {
+    * id : uuid
+    --
+    * status: Enum("PENDING", "CANCEL", "ACCEPTED")
+    created_at: timestamp
+    updated_at: timestamp
+}
+
+entity "OrderItems" {
+    * id : uuid
+    --
+    * order_id: FK order(id)
+    * product_id: FK product(id)
+    * quantity: int
+    * price: numeric
+    * cost: numeric
+    created_at: timestamp
+    updated_at: timestamp
+}
+
+"Product" ||--o| "OrderItems"
+"Order" ||--o| "OrderItems"
+
+@enduml
