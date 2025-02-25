@@ -21,6 +21,7 @@ exclude = [
     ".vscode",
     "__pypackages__",
     "_build",
+    "migrations",
     "buck-out",
     "build",
     "dist",
@@ -43,10 +44,11 @@ unfixable = []
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 
 [tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+multiline-quotes = "double"
 docstring-quotes = "double"
 
 [tool.ruff.format]
 quote-style = "single"
 indent-style = "space"
-skip-magic-trailing-comma = true
 line-ending = "auto"

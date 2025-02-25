@@ -65,6 +65,7 @@ develop-eggs/
 dist/
 downloads/
 eggs/
+pgdata/
 .eggs/
 lib/
 lib64/
